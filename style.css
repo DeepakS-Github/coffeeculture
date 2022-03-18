@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: #d3ad7f;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: .5s linear;
+    font-weight: bold;
+}
+
+.btn:hover{
+    letter-spacing: .1rem;
+}
+
+body{
+    display: flex;
+    overflow: hidden;
+}
+
+
+
+.left{
+    width: 50%;
+    height: 100vh;
+    background: rgba(45,52,54,1.0);
+    z-index: -2;
+}
+
+.right{
+    width: 50%;
+    height: 100vh;
+    background: rgba(45,52,54,0.9);
+    z-index: -2;
+}
+
+#cup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+
+
+
+.h-text{
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 15%;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.t-left{
+    position: absolute;
+    color: white;
+    left: 5%;
+    bottom: 15%;
+    max-width: 400px;
+    padding-left: 50px;
+    border-left: 5px solid orange;
+}
+
+.t-left p, .t-right p{
+    color: grey;
+    margin-top: 10px;
+}
+
+.t-right{
+    position: absolute;
+    color: white;
+    right: 0;
+    bottom: 15%;
+    max-width: 400px;
+    padding-right: 50px;
+}
+
+.l-box{
+    position: absolute;
+    height: 150px;
+    width: 300px;
+    bottom: 12%;
+    background: rgba(0,0,0,0.2);
+    z-index: -1;
+}
+
+.r-box{
+    position: absolute;
+    height: 150px;
+    width: 300px;
+    bottom: 10%;
+    right: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: -1;
+}
+
+@media (max-width: 1250px) {
+    #cup{
+        top: 50%;
+        width: 55vw;
+        min-width: 450px;
+    }
+    .h-text{
+        top: 20%;
+        font-size: 1em;
+    }
+    .t-left{
+        
+        bottom: 10%;
+        margin-right: 20px;
+        
+    }
+
+    .t-right{
+        display:none;
+    }
+
+    .l-box,.r-box{
+        display: none;
+    }
+    
+    
+.btn{
+    position: absolute;
+    top: 5%;
+    right: 0;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 1rem;
+    color: #fff;
+    background: #d3ad7f;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: .5s linear;
+    font-weight: bold;
+}
+
+    
+}
+
+#preloader{
+    background: #000 url(circle-loader-gif-2.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
