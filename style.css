@@ -120,6 +120,7 @@ nav{
 
 @media (max-width: 1250px) {
     #cup{
+        position: fixed;
         top: 50%;
         width: 55vw;
         min-width: 450px;
